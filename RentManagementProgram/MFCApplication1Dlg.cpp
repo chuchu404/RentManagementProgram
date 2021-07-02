@@ -472,6 +472,6 @@ void CMFCApplication1Dlg::OnBnClickedRadio2()	//查询
 
 void CMFCApplication1Dlg::OnBnClickedButton4()
 {
-	MessageBox(_T("作者：chuchu\n学号：1918000146\nQQ：  2496729202\nVersion：1.0"), _T("关于"), MB_OK);
+	MessageBox(_T("作者：chuchu\nQQ：  2496729202\nVersion：1.0"), _T("关于"), MB_OK);
 	// TODO: 在此添加控件通知处理程序代码
 }
