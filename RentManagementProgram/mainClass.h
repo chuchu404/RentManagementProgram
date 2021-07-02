@@ -29,17 +29,6 @@ public:
     friend ostream& operator<<(ostream& out,const House& h);
 	friend istream& operator>>(istream& in,House& h);
 	
-	/*
-    * House(string _address="",string _houseId="",string _houseType="",double _area=0,string _decorateLv="",double _rent=0):
-    address(_address),houseId(_houseId),houseType(_houseType),area(_area),decorateLv(_decorateLv),rent(_rent){}
-    void printInfo()
-    {
-        cout<<address<<" "<<houseId<<" "<<houseType<<" "<<area<<" "<<decorateLv<<" "<<rent<<endl;
-    }
-    static void search(const char *filename,string num);
-    static void add(const char *filename,int num);
-    static void printAll(const char *filename);
-    */
 };
 class Guest                 //租客类
 {
@@ -64,18 +53,6 @@ public:
     string getWorkAge() { return to_string(workAge).substr(0, to_string(workAge).length() - 4); }
     string getContacts() { return contacts; }
     string getAllowance() { return to_string(allowance).substr(0, to_string(allowance).length() - 4); }//保留2位小数
-    /*      //useless part
-    Guest(string _id="",string _name="",string _workUnit="",int _workAge=0,string _contacts="",double _allowance=0):
-    id(_id),name(_name),workUnit(_workUnit),workAge(_workAge),contacts(_contacts),allowance(_allowance){}
-    void printInfo()
-    {
-        cout<<id<<" "<<name<<" "<<workUnit<<" "<<workAge<<" "<<contacts<<" "<<allowance<<endl;
-    }
-    //static void search(const char *filename,string num);
-    //static void add(const char *filename,int num);
-    //static void printAll(const char *filename);
-    */
-
 };
 
 class Register              //租房登记信息类
@@ -95,13 +72,4 @@ public:
     string getRemark() { return remark; }
 	friend ostream& operator<<(ostream& out,const Register& r);
 	friend istream& operator>>(istream& in,Register& r);
-	/*
-    void printInfo()
-    {
-        cout<<id<<" "<<houseId<<" "<<checkInTime<<" "<<agreementNum<<" "<<remark<<endl;
-    }
-    static void search(const char *fileRe,const char *fileHo,const char *fileGu,string num);
-    static void add(const char *filename,int num);
-    static void printAll(const char *filename);
-    */
 };
